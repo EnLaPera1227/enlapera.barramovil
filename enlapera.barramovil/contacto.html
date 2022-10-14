@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        body {
+            background-color: #0C6C6E;
+    
+        }
+
+        header img{
+            margin-top: 10px;
+        }
+        span{
+            font-size: 2em;
+            padding-bottom: 20px;
+        }
+        main form fieldset{
+            display: flex;
+            align-items: flex-start;
+        }
+
+        legend {
+            font-size: 1.5em;
+        }
+
+    </Style>
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="./imagenes/pera BLANCO Y NEGRO (1)-1.png" alt="Logo" height="50px">
+            <span> EN LA PERA BARRA MOVIL </span>
+        </a>
+    </header>
+
+    <main>
+        <h1> CONTACTANOS </h1>
+
+        <form action="" method="get">
+            <input type="hidden" name="token" value="adfasfd2184sdufjdodkokodajf9103jfas">
+
+            <fieldset>
+                <legend>
+                    Datos Personales
+                </legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" autofocus required placeholder="Ingrese su Nombre">
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" autocomplete required placeholder="Ingrese su Apellido">
+
+                <label for="dni">Dni:</label>
+                <input type="number" name="dni" autocomplete required placeholder="Su DNI">
+
+                <label for="Gmail">Gmail:</label>
+                <input type="text" name="Gmail"  autocomplete required placeholder="Ingrese su Gmail">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Referido al Evento
+                </legend>
+
+                <label for="Invitados">Cantidad de personas</label>
+                <input type="number" name="Invitados" required>
+
+                <label for="Tipo de Servicio"> Tipo de Servicio </label>
+                <select name="Tipo de Servicio" id="Tipo de Servicio (Marque la Opcion)">
+                    <option value="Casamiento"> Casamiento </option>
+                    <option value="Cumpleaños de 15"> cumpleaños de 15 </option>
+                    <option value="Despedida de Fin de Año"> Despedida de fin de Año</option>
+                    <option value="Fiesta de Egresados"> Fiesta de Egresados </option>
+                    <option value="Otros"> otros </option>
+                </select>
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+</body>
+</html>
